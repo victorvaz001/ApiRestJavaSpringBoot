@@ -13,10 +13,7 @@ public class ProductController {
 	
 	@GetMapping //Configura o metodo para que ele responda na API Rest
 	public Department getObjects() {
-		Department d1 = new Department();
-		d1.setId(1L);
-		d1.setName("Tech");
-		
+		Department d1 = new Department(1L, "Tech");		
 		return d1;
 	}
 
